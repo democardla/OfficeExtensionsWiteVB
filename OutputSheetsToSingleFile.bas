@@ -6,7 +6,7 @@ Sub 导出sheet到单个文件()
 Application.ScreenUpdating = False
 For Each sht In Sheets
 sht.Copy
-ActiveWorkbook.SaveAs "/Users/democardla/Desktop/excel/" & sht.Name
+  ActiveWorkbook.SaveAs "你的磁盘位置" & sht.Name
 ActiveWorkbook.Close
 Next
 Application.ScreenUpdating = True
